@@ -8,10 +8,10 @@ jobs:
             - name: printing linux kernal os info
               run: uname -a
     mac-os-job:
-        runs-on: mac-latest
+        runs-on: macos-latest
         steps:
             - name: printing mac sw version
-              run: sw -vers
+              run: sw_vers
     windows-job:
         runs-on: windows-latest
         needs: linux-job
@@ -20,3 +20,4 @@ jobs:
               run: dir
 
 #if commit message is with [no actions],[actions no],[ci skip],[skip ci],[no ci],[ci no] it won't run work flow
+
