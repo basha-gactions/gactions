@@ -11,7 +11,7 @@ jobs:
         runs-on: macos-latest
         steps:
             - name: printing mac sw version
-              run: sw -vers
+              run: sw_vers
     windows-job:
         runs-on: windows-latest
         needs: linux-job
