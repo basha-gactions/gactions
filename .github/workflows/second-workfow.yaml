@@ -19,5 +19,5 @@ jobs:
             - name: list dir file information
               run: dir
 
-#if commit message is with [no actions],[actions no],[ci skip],[skip ci],[no ci],[ci no] it won't run work flow
+#if commit is with [no actions],[actions no],[ci skip],[skip ci],[no ci],[ci no] it won't run work flow
 
