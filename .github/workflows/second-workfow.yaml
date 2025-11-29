@@ -1,0 +1,20 @@
+name: Second-workflow-for-parallel-and-dependent-jobs
+on: [push]
+
+jobs:
+    linux-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: printing linux kernal os info
+              run: uname -a
+    mac-os-job:
+        runs-on: mac-latest
+        steps:
+            - name: printing mac sw version
+              run: sw -vers
+    windows-job:
+        runs-on: windows-latest
+        needs: linux-job
+        steps:
+            - name: list dir file info
+              run: dir
