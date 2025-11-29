@@ -1,0 +1,13 @@
+name: First-Basha-Workflow
+on: [push]
+
+jobs:
+    running-shell-commands:
+        runs-on: ubuntu-latest
+        steps:
+            - name: printing hello world
+              run: echo "hello world"
+            - name: printing multiple 
+              run: |
+              echo "hi"
+              echo "hellow"
