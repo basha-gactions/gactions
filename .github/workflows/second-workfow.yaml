@@ -8,7 +8,7 @@ jobs:
             - name: printing linux kernal os info
               run: uname -a
     mac-os-job:
-        runs-on: mac-latest
+        runs-on: macos-latest
         steps:
             - name: printing mac sw version
               run: sw -vers
